@@ -1,5 +1,10 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 
+console.log("process.env.NEXTAUTH_SECRET", process.env.NEXTAUTH_SECRET);
+console.log("process.env.WLD_CLIENT_ID", process.env.WLD_CLIENT_ID);
+console.log("process.env.WLD_CLIENT_SECRET", process.env.WLD_CLIENT_SECRET);
+console.log("process.env.NODE_ENV", process.env.NODE_ENV);
+
 const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
 
